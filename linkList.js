@@ -13,36 +13,36 @@
 //         return prev;
 // };
 
-class ListNode {
-    constructor(val, next = null) {
-        this.val = val;
-        this.next = next;
-    }
-}
+// class ListNode {
+//     constructor(val, next = null) {
+//         this.val = val;
+//         this.next = next;
+//     }
+// }
 
 
-function createLinkedList(arr) {
-    let dummy = new ListNode(0);
-    let current = dummy;
+// function createLinkedList(arr) {
+//     let dummy = new ListNode(0);
+//     let current = dummy;
 
-    for (let value of arr) {
-        current.next = new ListNode(value);
-        current = current.next;
-    }
+//     for (let value of arr) {
+//         current.next = new ListNode(value);
+//         current = current.next;
+//     }
 
-    return dummy.next;
-}
+//     return dummy.next;
+// }
 
-function printLinkedList(head) {
-    let current = head;
+// function printLinkedList(head) {
+//     let current = head;
 
-    while (current) {
-        process.stdout.write(current.val + " -> ");
-        current = current.next;
-    }
+//     while (current) {
+//         process.stdout.write(current.val + " -> ");
+//         current = current.next;
+//     }
 
-    console.log("null");
-}
+//     console.log("null");
+// }
 
 var reverseList = function(head) {
     let prev = null;
@@ -61,15 +61,15 @@ var reverseList = function(head) {
 
 const arr = [1, 2, 3, 4, 5];
 
-const head = createLinkedList(arr);
+// const head = createLinkedList(arr);
 
-console.log("Original:");
-printLinkedList(head);
+// console.log("Original:");
+// printLinkedList(head);
 
-const reversed = reverseList(head);
+// const reversed = reverseList(head);
 
-console.log("Reversed:");
-printLinkedList(reversed);
+// console.log("Reversed:");
+// printLinkedList(reversed);
 
 // Problem 21 (Merge Two Sorted Lists),
 
